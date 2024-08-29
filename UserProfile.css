@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+  background-color: #f0f0f5; /* Light grayish background for a soft look */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean and modern font */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Profile Container */
+.container {
+  border: 1px solid #ddd; /* Subtle border for a clean separation */
+  border-radius: 12px; /* Rounded corners for a modern look */
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 500px; /* Adjust width for better spacing */
+  background-color: #ffffff; /* Clean white background */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform and shadow transition */
+}
+
+.container:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Avatar Styles */
+.avatar {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  display: block;
+  margin: 0 auto 20px; /* Center avatar with margin below */
+  border: 3px solid #6a0dad; /* Bold border for emphasis */
+}
+
+/* Input Styles */
+.input {
+  display: block;
+  width: calc(100% - 24px); /* Adjust width to account for padding and border */
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 6px;
+  border: 1px solid #ccc; /* Neutral border color */
+  box-sizing: border-box; /* Include border and padding in element’s width */
+  font-size: 16px; /* Consistent font size */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth border and shadow transition */
+}
+
+.input:focus {
+  border-color: #6a0dad; /* Matching accent color on focus */
+  box-shadow: 0 0 5px rgba(106, 13, 173, 0.3); /* Shadow on focus */
+  outline: none; /* Remove default focus outline */
+}
+
+/* Button Styles */
+.button {
+  padding: 12px 24px;
+  margin: 5px;
+  border-radius: 6px;
+  border: none;
+  background-color: #6a0dad; /* Deep purple for the primary button */
+  color: white;
+  cursor: pointer;
+  font-size: 15px; /* Standard button font size */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth color and transform transition */
+}
+
+.button:hover {
+  background-color: #5a009f; /* Slightly darker shade on hover */
+  transform: translateY(-2px); /* Lift on hover */
+}
+
+.button.cancel {
+  background-color: #e60000; /* Bright red for cancel button */
+}
+
+.button.cancel:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Even spacing between buttons */
+}
+
+.info-container,
+.form-container {
+  text-align: left; /* Align text to the left for a clean layout */
+  margin-top: 20px;
+}
+
+h2 {
+  color: #333; /* Dark text color for contrast */
+  margin-bottom: 10px; /* Space between heading and text */
+}
+
+p {
+  color: #555; /* Medium text color for readability */
+  margin-bottom: 5px; /* Spacing between paragraphs */
+}
